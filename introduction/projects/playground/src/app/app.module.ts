@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HighlightDirective24 } from './section3DirectivesAttributs/HostBindingSeLierAPropriétéElementHtml24/highlight24.directive';
+import { HighlightDirective25 } from './section3DirectivesAttributs/InputRecupererInfoDansAtttributElementHTML25/highlight25.directive';
 
 @NgModule({
-  declarations: [AppComponent, HighlightDirective24],
+  declarations: [AppComponent, HighlightDirective25],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

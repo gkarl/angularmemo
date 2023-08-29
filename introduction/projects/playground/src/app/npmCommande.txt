@@ -1,0 +1,14 @@
+npm install -g @angular/cli  => install Angular général pour ordi
+
+Ctrl , => recherche :
+format default = Prettier
+emmet include => typescript|html
+
+ng new--create-application=false introduction  => creé un workspace (pas toute l'appli)
+
+code introduction => ouvre le workspace dans VS code
+
+ng new nom_du_worspace  => crée toute l'appli
+
+ng generate application playground => génére un projet distinc dans notre appli
+

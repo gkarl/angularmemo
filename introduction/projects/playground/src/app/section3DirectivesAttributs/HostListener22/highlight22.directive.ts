@@ -10,7 +10,8 @@ import {
 })
 export class HighlightDirective22 {
   // ______________Méthode 1_______________
-  // Methode impérative pour afouté un addEeventListener sur notre selector et afficher un des attribut qu'on veux
+  // 20. Déclarer la directive dans le AppModule
+  // Methode impérative pour ajouté un addEeventListener sur notre selector et afficher un des attribut qu'on veux
   /*  constructor(private elementRef: ElementRef<HTMLElement>) {
     console.log(this.elementRef);
     elementRef.nativeElement.addEventListener('mouseenter', ($event) => {
@@ -34,4 +35,9 @@ export class HighlightDirective22 {
     // Angular comprend que ces attributs il doit les passer en argument de la methode
     console.log('on est rentré!', clientX, clientY);
   }
+
+  /*   @HostListener('mouseenter', ['$event'])
+  onMouseEnter(event: MouseEvent) {
+    console.log('on est rentré!', event.clientX);
+  }*/
 }

@@ -1,0 +1,12 @@
+on a un lien <a> on voudrais une directive confirme qui rajoute comme comportement
+
+- Qd on clic on ne va pas aller tout de suite sur le lien on va nous demander une confirmation
+- si la personnes confirme on va sur twitter
+- si elle ne confirme pas on reste ici en faisant un preventDefault
+
+Indice = utiliser windows.confirm()
+
+Une autre directive confirme-message
+
+- et la il peuvent mettre leur propre message de confirmation
+

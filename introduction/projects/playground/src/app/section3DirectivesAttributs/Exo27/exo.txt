@@ -1,0 +1,1 @@
+On doit créer une directive qui empéche qu'un lien <a> s'ouvre

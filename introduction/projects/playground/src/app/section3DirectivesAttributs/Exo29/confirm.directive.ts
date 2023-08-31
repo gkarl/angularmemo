@@ -13,7 +13,7 @@ export class ConfirmDirective {
 
     if (!confirmation) {
       // si confirmation est à false
-      event.preventDefault();
+      event.preventDefault(); // ça empéche le lien <a> de marcher
     }
     return true;
   } // Rq on peut remplacer tout le contenu de la methode par window.confirm(this.message); si fct return false @HostListener lance un event.preventDefault();

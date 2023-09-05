@@ -7,14 +7,25 @@ import {
 } from '@angular/core';
 
 @Component({
-  //** Meilleur methode pour injecter du HTML
-  selector: 'div[user-profile36]', // On veux parler à toute les <div> qui ont l'attribut user-profile
+  // Meilleur methode pour injecter du HTML
+  // @Component est comme @Directive mais a besoin d'un template
+  //** {{ }} permet de faire de l'interpolation de récupérer la valeur d'1 variable ou d'1 méthode et de l'afficher dans le template
+  selector: 'div[user-profile37]', // On veux parler à toute les <div> qui ont l'attribut user-profile
   template: `
-    <h3>Patrick Martin</h3>
-    Métier : <strong>Informaticien</strong>
-  `, //** @Component est comme @Directive mais a besoin d'un template
+    <p>
+      Valeur Attributs dans app.component @Input:
+      <strong> {{ firstname }} {{ lastName }} </strong>
+      Métier : <strong> {{ job }} </strong>
+      <br />
+      Opération mathématique : {{ 3 * 1000 }} Euro
+      <br />
+      Ternaire : {{ 5 === 5 ? 'égalité' : 'différent' }}
+      <br />
+      Appel de méthode : {{ getfctTest() }}
+    </p>
+  `,
 })
-export class UserProfileComponent36 {
+export class UserProfileComponent37 {
   @Input('first-name') // Aller chercher les valeurs sur le template de la propriété 'first-name' et valorise la variable en dessous
   firstname = '';
   @Input('last-name') // idem
@@ -33,4 +44,8 @@ export class UserProfileComponent36 {
      Métier : <strong>${this.job}</strong>
      `;
   } */
+
+  getfctTest() {
+    return 'Toto';
+  }
 }

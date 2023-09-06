@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HighlightDirective26 } from './section3DirectivesAttributs/CycleDeVieNgOnInit26/highlight26.directive';
 import { NoOpenDirective } from './section3DirectivesAttributs/Exo27/no-open.directive';
 import { ConfirmDirective } from './section3DirectivesAttributs/Exo29/confirm.directive';
-import { UserProfileComponent38 } from './section4Composants/PipesFormaterValeursDansInterpolations38/user-profile38.component';
+import { UserProfileComponent39 } from './section4Composants/PropertyBindingLierUneValeurAUneProprieteElementHtml39/user-profile39.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { UserProfileComponent38 } from './section4Composants/PipesFormaterValeur
     HighlightDirective26,
     NoOpenDirective,
     ConfirmDirective,
-    UserProfileComponent38,
+    UserProfileComponent39,
   ],
   imports: [BrowserModule],
   providers: [],

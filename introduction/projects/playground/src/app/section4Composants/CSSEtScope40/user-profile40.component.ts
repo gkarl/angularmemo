@@ -9,7 +9,7 @@ import {
 // Meilleur methode pour injecter du HTML
 @Component({
   // @Component est comme @Directive mais a besoin d'un template
-  selector: 'div[user-profile39]', // On veux parler à toute les <div> qui ont l'attribut user-profile
+  selector: 'div[user-profile40]', // On veux parler à toute les <div> qui ont l'attribut user-profile
   template: `
     <p>
       <!--_______________Lesson 37___________________-->
@@ -30,20 +30,29 @@ import {
     <!--_______________Lesson 38___________________-->
 
     <h6>Lesson 38</h6>
-    <strong> {{ firstname | uppercase }} </strong>
+    <!--<strong> {{ firstname | uppercase }} </strong>
     <!-- | => pipe va devoir travailler sur la valeur que vous lui donnez pour l'afficher à la fin d'une certaine façon Ex ici affiche la variable en majuscule dans le template -->
     Gagne
-    {{ revenue | currency : 'EUR' : 'symbol' }}
+    <!--{{ revenue | currency : 'EUR' : 'symbol' }}
     <!--'EURO' => parametre de currency celui que je veut utiliser c'est Euro | 'symbol' => 2em parametre symbole €-->
 
-    <!--_______________Lesson 39**___________________-->
+    <!--_______________Lesson 39___________________-->
 
     <img [src]="avatar" alt="" />
-    <!--**  [ ] => autour d'un attribut de balise ce que vous donné entre gillemet " " sera interprété comme du Javascript = Property Binding  | accepte Ternaire, variable, fct -->
-    <!-- **on a vraiment l'assignation d'1 variable à une propriété de ma balise -->
+    <!--  [ ] => autour d'un attribut de balise ce que vous donné entre gillemet " " sera interprété comme du Javascript = Property Binding  | accepte Ternaire, variable, fct -->
+    <!-- on a vraiment l'assignation d'1 variable à une propriété de ma balise -->
   `,
+  styles: [
+    `
+      /* _______________Lesson 40**___________________ */
+      /* **Le CSS ne s'applique qu'au template */
+      h3 {
+        color: blue;
+      }
+    `,
+  ],
 })
-export class UserProfileComponent39 {
+export class UserProfileComponent40 {
   @Input('first-name') // Aller chercher les valeurs sur le template de la propriété 'first-name' et valorise la variable en dessous
   firstname = '';
 
